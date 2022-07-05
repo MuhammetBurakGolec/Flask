@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>hello</title>
+    </head>
+    <body>
+        <h1>{{num1}} + {{num2}} = {{ result }}</h1>
+        <!--
+            2 Durumda aynı çünkü result views.pr da toplanıp iletiliyor,
+            ama aynı zmanda num1 ve num2 int olarak tanımlı olduğu için toplama html ded e yapışar bilir
+        -->
+        <h1>{{num1}} + {{num2}} = {{ num1 + num2 }}</h1> 
+    </body>
+</html>
