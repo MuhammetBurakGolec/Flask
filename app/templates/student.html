@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>hello</title>
+    </head>
+    <body>
+        <form action="{{ url_for ('result') }}" method="post">
+            <p>Öğrencinin İsmi: <input type="text" name = name ></p>
+            <p>Algorithms Notu: <input type="text" name = algo ></p>
+            <p>Lineer Notu <input type="text" name = lineer ></p>
+            <p>Fizik Notu<input type="text" name = fzk ></p>
+            <p><input type="submit" name="Gönder" id=""></p>
+        </form>
+    </body>
+</html>
