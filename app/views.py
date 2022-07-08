@@ -13,8 +13,8 @@ def index():
     signer = Signer("secret key")
     signed_name = request.cookies.get('name')
 
-    try:
-        name = signer.unsign(signed_name).decode()
+    try: 
+        name = signer.unsign(signed_name).decode() # gettin cookies from web brow
         print('name', name)
 
     except BadSignature:
